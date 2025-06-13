@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color:rgba(238, 238, 238, 0.966);
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: rgb(248, 216, 231);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(241, 147, 166);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid rgb(252, 164, 181);
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgb(252, 164, 181);
+  color: rgb(85, 84, 84);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(252, 164, 181);
+}
+
+#message {
+  margin-top: 15px;
+  color: rgb(252, 164, 181);
+  text-align: center;
+}
+
+  </style>>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Softglow</h2>
+    <form id="registrationForm" action="login.html">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Sign up</button>
+    </form>
+
+     <p id="RegisterMessage"></p>
+    <p>Already have an account? <a href="login.html">Sign in here</a></p>
+
+    <p id="message"></p>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+
+  if (name === "" || email === "" || password === "") {
+    document.getElementById("message").textContent = "Please fill in all fields.";
+    document.getElementById("message").style.color = "red";
+    return;
+  }
+
+  // You can add more validations here, like password strength, email format, etc.
+
+  document.getElementById("message").textContent = "Sucessfully Signed Up!";
+  document.getElementById("message").style.color = "green";
+
+  // Reset the form
+  document.getElementById("registrationForm").reset();
+});
+
+  </script>
+</body>
+</html>
