@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="border-0 bg-gray-100/95 h-[1000px] w-[98%] rounded-[30px] m-1.5 flex justify-between z-30 fixed right-2">
+    <nav class="navbar flex border-0 h-5 w-full justify-between items-center mt-8 ml-2.5 mr-3.5">
+      <div class="logo text-pink-300 text-[20px] p-2.5 font-monospace sans-serif text-3xl">
+        Softglow Beauty
+      </div>
+      <div class="menu">
+        <ul class="flex list-none justify-center p-5 hover:cursor-pointer color-gray-900">
+          <li class="px-2.5 flex text-gray-500 font-sans">
+            <a href="#AboutUs" class="px-2.5 flex text-gray-500 font-sans no-underline hover:text-gray-700 transition-colors duration-300">About Us</a>
+          </li>
+          <li class="px-2.5 flex text-gray-500 font-sans">
+            <a href="#Blog" class="px-2.5 flex text-gray-500 font-sans no-underline hover:text-gray-700 transition-colors duration-300">Blog</a>
+          </li>
+          <li class="px-2.5 flex text-gray-500 font-sans">
+            <a href="#Shop" class="px-2.5 flex text-gray-500 font-sans no-underline hover:text-gray-700 transition-colors duration-300">Shop</a>
+          </li>
+          <li class="px-2.5 flex text-gray-500 font-sans">
+            <a href="login.html" class="px-2.5 flex text-gray-500 font-sans no-underline hover:text-gray-700 transition-colors duration-300">Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style="color: rgb(119, 119, 119);">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+      </div>
+    </nav>
+    <div class="intro absolute p-2.5 m-0.5 w-[98%] h-[80%] grid grid-cols-2 items-center gap-0 mt-0"> 
+      <div class="text">
+        <h1 class="text-[50px] text-pink-300 font-monospace sans-serif mt-5 ml-5">Softglow Beauty</h1>
+        <h2 class="text-[20px] text-gray-600 font-monospace sans-serif pr-5 mr-2.5">Discover the essence of beauty with Softglow.</h2>
+        <h2 class="text-[20px] text-gray-600 font-monospace sans-serif pr-5 mr-2.5">
+          At Softglow, we believe that beauty is more than skin deep.
+          Our carefully curated range of skincare and makeup products
+          is designed to nourish your skin and enhance your natural beauty.
+          Our products are designed to enhance your natural glow,
+          providing you with the confidence to shine every day.
+        </h2>
+        <form action="registration.html">
+          <button class="btn bg-pink-300 text-gray-700 font-monospace sans-serif h-[50px] w-[100px] p-2.5 rounded-[20px] ml-5 mt-5 border-none cursor-pointer transition-colors duration-300 hover:bg-pink-400">
+            Sign Up
+          </button>
+        </form>
+      </div>
+      <div class="pic border-0 rounded-[20px]">
+        <img class="rounded-[20px] z-10" height="100%" width="100%" src="https://plus.unsplash.com/premium_photo-1661769021743-7139c6fc4ab9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXR5JTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+      </div>
+    </div>
+  </header>
+</body>
+</html>
